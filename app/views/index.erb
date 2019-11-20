@@ -9,8 +9,7 @@
       <h2>all available recipes:</h2>
       <% @recipes.each do |recipe| %>
       <ul>
-        <li>Name: <a href="<%= recipe.name %>"><%= recipe.name %><a></li>
-        <li>Ingredients: <%= recipe.ingredients %></li>
+        <li>Name: <a href="/recipes/<%= recipe.id %>"><%= recipe.name %><a></li>
       </ul>
       <% end %>
     </div>
